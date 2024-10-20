@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRI Centre</title>
+    <title>MRI Centre - Advanced Imaging Services</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Welcome to our MRI Centre. We offer state-of-the-art MRI services with advanced facilities.">
-    <meta name="keywords" content="MRI, MRI Centre, medical imaging, appointments">
+    <meta name="description" content="Our MRI Centre offers advanced imaging services with state-of-the-art technology. Book your appointment today!">
+    <meta name="keywords" content="MRI, MRI Centre, medical imaging, appointments, healthcare">
     <meta name="author" content="Your Centre Name">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -15,9 +16,17 @@
         <p>Your health is our priority.</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+        </ul>
+    </nav>
+
     <section id="about">
         <h2>About Us</h2>
-        <p>Our MRI Centre provides advanced imaging services with the latest technology. We are dedicated to providing high-quality patient care.</p>
+        <p>Our MRI Centre provides advanced imaging services with the latest technology. We are dedicated to providing high-quality patient care with experienced professionals.</p>
     </section>
 
     <section id="facilities">
@@ -32,7 +41,7 @@
 
     <section id="appointment">
         <h2>Book an Appointment</h2>
-        <form id="appointment-form">
+        <form id="appointment-form" action="submit_appointment.php" method="POST">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -45,6 +54,9 @@
             <label for="date">Preferred Date:</label>
             <input type="date" id="date" name="date" required>
 
+            <label for="message">Additional Notes:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
             <input type="submit" value="Submit">
         </form>
     </section>
@@ -56,3 +68,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
